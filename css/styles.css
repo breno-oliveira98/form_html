@@ -1,11 +1,16 @@
-h2 {
-    text-align: center;
-}
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
-.container {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkgray;
+  }
