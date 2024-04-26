@@ -7,6 +7,13 @@
     font-style: normal;
   }
 
+  body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -17,3 +24,37 @@
     width: 100%;
     background-color: darkgray;
   }
+
+  h2.logo {
+    font-size: 2em;
+    color: white;
+  }
+
+  nav.menu a {
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  .btn-login {
+    width: 100px;
+    height: 30px;
+    margin: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid  white;
+    cursor: pointer;
+  }
+
+main {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
