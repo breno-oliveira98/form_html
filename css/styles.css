@@ -32,6 +32,10 @@
 
   h2.logo {
     font-size: 2em;
+    display: flex;
+  }
+
+  header h2 {
     color: white;
   }
 
@@ -60,11 +64,33 @@
 main {
   position: relative;
   width: 350px;
-  height: 350px;
+  height: 400px;
   background-color: transparent;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
-  border: solid 1px white;
+  border: solid 2px white;
   justify-content: center;
+  border-radius: 10px;
+}
+
+main a {
+  text-decoration: none;
+  color: honeydew
+}
+
+main input {
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+main h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
 }
