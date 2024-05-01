@@ -2,9 +2,10 @@
 
 
 * {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
 
   body {
@@ -12,54 +13,120 @@
     justify-content: center;
     display: flex;
     min-height: 100vh;
-    background: url(../images/estadio.png) no-repeat;
+    width: ;
+    background: url(../images/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
   }
 
+/* MENU DE NAVEGAÇÃO */
+
   header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* background-color: darkgray; */
-    padding: 20px;
+    background-color:#fff;
+    padding: 5px 100px;
     z-index: 99;
   }
 
-  h2.logo {
+  .logo {
+    color: red;
     font-size: 2em;
     display: flex;
+    user-select: none;
   }
 
-  header h2 {
-    color: white;
+  .logo span {
+    margin-left: 10px;
+    color: blue;
   }
 
-  nav.menu a {
-    font-size: 1em;
-    color: white;
-    font-weight: 500;
+  .menu a {
+    font-size: 1.1em;
+    color: blue;
+    font-weight: 300;
     text-decoration: none;
     margin-left: 40px;
     position: relative;
-    font-weight: bold;
+    font-weight: 500;
   }
+
+  .menu a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: red;
+    border-radius: 5px;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.menu a:hover::after {
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+.menu .btn-login-popup {
+  width: 115px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  background-color: transparent;
+  color: blue;
+  border: 2px solid yellow;
+  cursor: pointer;
+  margin-left: 40px;
+  font-weight: 500;
+  z-index: 99;
+}
+
+.menu .btn-login-popup:hover {
+  width: 115px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  background-color: red;
+  color: #fff;
+  border: 2px solid red;
+  cursor: pointer;
+  margin-left: 40px;
+  font-weight: 500;
+  z-index: 99;
+}
 
   .btn-login {
     width: 100px;
     height: 40px;
-    margin: 40px;
+    margin: 20px;
+    padding: 0 20px;
     border-radius: 5px;
     background-color: transparent;
-    color: white;
-    border: 2px solid white;
+    color: blue;
+    border: 2px solid yellow;
     cursor: pointer;
     font-weight: 600;
+    z-index: 99;
   }
+
+  @media screen and (max-width: 768px) {
+    .btn-login {
+      margin: 10px;
+      padding: 0 10px;
+    }
+  }
+/* FORMULARIO DE LOGIN */
 
 main {
   position: relative;
@@ -69,21 +136,24 @@ main {
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
-  border: solid 2px white;
+  border: solid 2px yellow;
   justify-content: center;
   border-radius: 10px;
 }
 
 main a {
   text-decoration: none;
-  color: honeydew
+  color: yellow
 }
 
 main input {
   background: transparent;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  /* border-top: 0; */
+  /* border-left: 0; */
+  /* border-right: 0; */
+  border: none;
+  border-bottom: solid 2px;
+  padding: 8px;
   width: 100%;
   margin-bottom: 10px;
   display: flex;
@@ -91,6 +161,39 @@ main input {
 
 main h2 {
   text-align: center;
-  color: white;
+  color: blue;
   margin-bottom: 10px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 33px;
+  font-size: 1.2em;
+  color: #162938; 
+  line-height: 32px;
+}
+
+.lembrar-senha {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Distribui os itens igualmente */
+  margin-top: 10px; /* Adiciona um espaço entre os inputs e os elementos abaixo */
+  font-size: 12px;
+}
+
+.lembrar-senha label {
+  color: black;
+  font-size: 12px;
+  display: flex;
+  white-space: nowrap; 
+}
+
+.lembrar-senha a {
+  text-decoration: none;
+  color: black;
+}
+
+
+input::placeholder {
+  color: blue;
 }
