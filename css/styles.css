@@ -15,7 +15,8 @@
     min-height: 100vh;
     background: url(../images/background.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top 100px;
+    background-size: 120% 80%;
   }
 
 /* MENU DE NAVEGAÇÃO */
@@ -159,6 +160,10 @@ main input {
   display: flex;
 }
 
+input::placeholder {
+  color: blue;
+}
+
 main h2 {
   text-align: center;
   color: blue;
@@ -194,6 +199,3 @@ main h2 {
 }
 
 
-input::placeholder {
-  color: blue;
-}
