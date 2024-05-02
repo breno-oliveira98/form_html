@@ -155,6 +155,7 @@ main input {
   padding: 8px;
   width: 100%;
   margin-bottom: 10px;
+  outline: none;
   display: flex;
 }
 
