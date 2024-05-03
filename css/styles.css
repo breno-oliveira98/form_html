@@ -156,11 +156,20 @@ main a {
   position: relative;
 }
 
-main input {
+.input-box input {
   width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   background: transparent;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 input::placeholder {
@@ -224,3 +233,4 @@ main h2 {
  justify-content: center;
  margin-top: 30px;
 }
+
