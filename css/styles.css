@@ -15,8 +15,8 @@
     min-height: 100vh;
     background: url(../images/background.jpg) no-repeat;
     background-size: cover;
-    background-position: center top 90px;
-    background-size: 120% 100%;
+    /* background-position: center top 90px; */
+    /* background-size: 120% 100%; */
 }
 
 /* MENU DE NAVEGAÇÃO */
@@ -29,7 +29,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color:#fff;
+    background-color: transparent;
     padding: 5px 100px;
     z-index: 99;
   }
@@ -127,8 +127,12 @@
     }
   }
 /* FORMULARIO DE LOGIN */
+.container .form-box-login {
+  width: 100%;
+  padding: 27px;
+}
 
-main {
+.container {
   position: relative;
   width: 350px;
   height: 400px;
@@ -141,6 +145,7 @@ main {
   border-radius: 10px;
   margin-top: 100px;
 }
+
 
 main a {
   text-decoration: none;
@@ -229,9 +234,11 @@ main h2 {
 }
 
 .cadastrar {
- width: 100%;
- align-items: center;
- justify-content: center;
- margin-top: 30px;
+  padding: 0 27px;
+  font-size: 12px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 10px;
 }
 
