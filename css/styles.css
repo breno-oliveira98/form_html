@@ -83,7 +83,7 @@
   font-size: 1.1em;
   background-color: transparent;
   color: blue;
-  border: 2px solid yellow;
+  border: 2px solid blue;
   cursor: pointer;
   margin-left: 40px;
   font-weight: 500;
@@ -206,6 +206,7 @@ main h2 {
   font-size: 12px;
   display: flex;
   white-space: nowrap; 
+  gap: 5px;
 }
 
 .lembrar-senha a {
